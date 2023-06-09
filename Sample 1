@@ -1,0 +1,19 @@
+
+#include <stdio.h>
+
+int main()
+{
+
+int m,n,p,r;
+
+r=scanf("%d%d%d",&m,&n,&p); 
+printf("%d",r);
+
+return 0;
+}
+
+OUTPUT:
+5
+6 
+8
+3
