@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+
+int a,b=5,c=7; 
+a=printf("%d%d",b,c);
+
+printf("\n%d",a); 
+
+
+    return 0;
+}
+
+OUTPUT:
+57
+2
