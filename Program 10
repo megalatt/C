@@ -1,0 +1,27 @@
+int main()
+{
+float r=36; 
+printf("%d",r%3); 
+   return 0;
+}
+
+Output: error
+ Illegal use of Floating Point in main Function
+ 
+main.c: In function ‘main’:
+main.c:14:14: error: invalid operands to binary % (have ‘float’ and ‘int’)
+   14 | printf("%d",r%3);
+      |              ^
+      
+      
+ Description:
+ 
+      int main()
+{
+int r=36; 
+printf("%d",r%3);      // 36/3
+   return 0;
+}
+
+Output:
+0
