@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+int main()
+{
+    printf("%d %d %d %d",sizeof(4),sizeof('4'),sizeof("hello"),sizeof(3.14)); 
+
+    return 0;
+}
+
+
+OUTPUT
+4 4 6 8
+
+
+Description:
+
+
+main.c: In function ‘main’:
+main.c:13:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+   13 |     printf("%d %d %d %d",sizeof(4),sizeof('4'),sizeof("hello"),sizeof(3.14));
+      |             ~^           ~~~~~~~~~
+      |              |           |
+      |              int         long unsigned int
+      |             %ld
+main.c:13:17: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘long unsigned int’ [-Wformat=]
+   13 |     printf("%d %d %d %d",sizeof(4),sizeof('4'),sizeof("hello"),sizeof(3.14));
+      |                ~^                  ~~~~~~~~~~~
+      |                 |                  |
+      |                 int                long unsigned int
+      |                %ld
+main.c:13:20: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘long unsigned int’ [-Wformat=]
+   13 |     printf("%d %d %d %d",sizeof(4),sizeof('4'),sizeof("hello"),sizeof(3.14));
+      |                   ~^                           ~~~~~~~~~~~~~~~
+      |                    |                           |
+      |                    int                         long unsigned int
+      |                   %ld
+main.c:13:23: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘long unsigned int’ [-Wformat=]
+   13 |     printf("%d %d %d %d",sizeof(4),sizeof('4'),sizeof("hello"),sizeof(3.14));
+      |                      ~^                                        ~~~~~~~~~~~~
+      |                       |                                        |
+      |                       int                                      long unsigned int
+      |                      %ld
