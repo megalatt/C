@@ -1,13 +1,11 @@
 #include<stdio.h>
 int main()
 {
-
 int x=5,y=2,z=0,m;
- 
 m=x+11/2-10*y%3;
 printf("%d",m); 
-
 return 0;
 }
+
 
 OUTPUT: 8
