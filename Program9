@@ -1,0 +1,16 @@
+int main()
+{
+
+int x=2,y=2,z=2;
+printf("%d\n",--x*++x); 
+printf("%d %d %d\n",y,++y,y*y); 
+printf("%d %d %d\n",z,z++,z*z); 
+
+   return 0;
+}
+
+
+Output:
+4
+3 3 4
+3 2 4
