@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main()
+{
+
+int l=5,z;
+z=l++ * l++;
+
+   return 0;
+}
+
+
+
+OUTPUT: no output
+
+Note: if printf(“%d”,z); is given , output wil be 25 
