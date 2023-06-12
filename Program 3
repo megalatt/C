@@ -1,12 +1,12 @@
 #include<stdio.h>
 int main()
 {
-
 const int m=6;  
 printf("%d",++m); 
 }
 return 0;
 }
+
 
 OUTPUT:
 cannot modify a const object in function main 
