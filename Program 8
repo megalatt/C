@@ -1,0 +1,18 @@
+#include<stdio.h>
+void main()
+{
+int a=10,b;
+b= ++a + ++a + ++a;
+printf("%d", b);
+return 0;
+}
+
+OUTPUT:
+37
+
+Description:
+b= ++a + ++a + ++a;
+    11,12,13
+  23 + ++a
+  24+13
+   37
