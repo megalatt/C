@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	double side,surface;
+	printf("Enter a size of dodecahedron : ");
+	scanf("%lf",&side);
+	if(side==0)
+	{
+		printf("Invalid input side of dodecahedron\n");
+	}
+	else{
+	surface=((3 * sqrt(25 + 10 * (sqrt(5)))) * (pow(side, 2)));
+	printf("%.2lf\n",surface);
+	}
+	return 0;
+}
