@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+	int w;
+	float x,y,Profit;
+	printf("Number of copies sold : ");
+	scanf("%d",&w);
+	printf("Cost of each copy : ");
+	scanf("%f",&x);
+	printf("Cost spent by agency on each newspaper : ");
+	scanf("%f",&y);
+	Profit = (w*x - (100 + (w*y)));
+	printf("The total profit obtained : %f\n", Profit);
+	return 0;
+}
