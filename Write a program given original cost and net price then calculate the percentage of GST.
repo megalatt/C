@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+int Gst,N_price,org_cost;
+	printf("Enter net price and original cost : ");
+	scanf("%d %d",&N_price,&org_cost);
+	Gst=(((N_price - org_cost) * 100) / org_cost);
+	printf("%d%%\n",Gst);
+	return 0;
+}
