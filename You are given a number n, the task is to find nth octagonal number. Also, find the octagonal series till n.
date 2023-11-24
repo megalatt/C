@@ -1,0 +1,14 @@
+\\Octagonal numbers can be formed by placing triangular numbers on the four sides of a square. Octagonal number is calculated by using the formula (3n2 – 2n).
+
+#include<stdio.h>
+int main() 
+{ 
+    int n;
+	printf("Enter a number : ");
+		scanf("%d",&n);
+	if(n==0)
+		printf("Invalid input\n");
+	else
+    printf("%d\n",(3 * n * n - 2 * n)); 
+    return 0; 
+} 
