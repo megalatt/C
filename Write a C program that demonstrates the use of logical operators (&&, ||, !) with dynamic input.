@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main()
+{
+	int a,b;
+	printf("Enter numbers: ");
+	scanf("%d %d",&a,&b);
+	if(a>0 && b>0)
+	{
+		printf("Both are positive\n");
+	}
+	else{
+		printf("Both are not positive\n");
+	}
+	if(a==5 || b==5)
+	{
+		printf("%d or %d = 5\n",a,b);
+	}
+	else{
+		printf("%d,%d != 5\n",a,b);
+	}
+	if(!(a<10))
+	{
+		printf("%d > 10\n",a);
+			}
+	else{
+		printf("%d <= 10\n",a);
+	}
+	return 0;
+}
