@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	double side,surface;
+	printf("Enter a sides of octahedron : ");
+	scanf("%lf",&side);
+	if(side==0)
+	{
+		printf("Invalid input\n");
+	}
+	else{
+	surface=(2*(sqrt(3))*(side*side));
+	printf("%.3lf\n",surface);
+	}
+	return 0;
+}
