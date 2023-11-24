@@ -1,0 +1,17 @@
+\\Volume = (15 + 7√5)/4 * e3  ,Where e is length of an edge.
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int side;
+	float Volume;
+	printf("Enter a size of dodecahedron : ");
+	scanf("%d",&side);
+	if(side==0)
+	{
+	printf("Invalid input\n");}
+	else{
+		Volume=((15 +(7*(sqrt(5))))/4)*(pow(side, 3));
+		printf("%.2f\n",Volume);
+	}return 0;
+}
