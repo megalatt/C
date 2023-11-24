@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+	float a,area;
+	printf("Enter a number : ");
+	scanf("%f",&a);
+	area=(a * a * (3.1415 / 2));
+	printf("%.2f\n",area);
+	return 0;
+}
