@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+	int a,b,c,d;
+	float e;
+printf("Enter three integers : ");
+scanf("%d %d %d",&a,&b,&c);
+d=a+b+c;
+	printf("Sum of %d, %d and %d : %d\n",a,b,c,d);
+
+e=d/3.0;
+printf("Average of %d, %d and %d : %f\n",a,b,c,e);
+return 0;
+}
