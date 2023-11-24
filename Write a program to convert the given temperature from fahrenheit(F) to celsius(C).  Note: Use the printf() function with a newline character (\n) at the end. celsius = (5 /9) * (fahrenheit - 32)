@@ -1,0 +1,10 @@
+#include<stdio.h>  
+int main()   
+{
+float Fahrenheit, Celsius;  
+printf("Enter F : ");
+scanf("%f",&Fahrenheit);  
+Celsius = ((Fahrenheit-32)*5)/9;  
+printf("C = %f\n",Celsius);  
+return (0);  
+}  
