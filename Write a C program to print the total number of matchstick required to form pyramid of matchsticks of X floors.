@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+	int x,stick;
+	printf("Enter number of pyramids : ");
+	scanf("%d",&x);
+	if(x!=0)
+	{
+	stick=(3 * x * (x + 1)) / 2;
+	printf("%d\n",stick);
+}
+else
+{
+	printf("Invalid Input\n");
+}
+return 0;
+}
+
