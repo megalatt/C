@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main() {
+	int n, result;
+	printf("Enter an integer : ");
+	scanf("%d", &n);
+	result =(n <<2) +(n<<1) +n- 0 ;
+	printf("The result : %d\n", result);
+	return 0;
+}
