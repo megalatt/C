@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main() {
+	int number1 ;
+	printf("Enter any number : ");
+	scanf("%d",&number1);
+	if((number1 & 1)==1) // Fill in the missing code
+		printf("Given number is odd\n");
+	else 
+		printf("Given number is not odd\n");
+  return 0;
+}
