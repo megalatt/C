@@ -1,0 +1,11 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+
+{
+int a,r,N,series;
+	printf("Enter 3 integers : ");
+	scanf("%d %d %d",&a,&r,&N);
+series = a * (pow(r, N - 1));
+	printf("%d\n",series);
+}
