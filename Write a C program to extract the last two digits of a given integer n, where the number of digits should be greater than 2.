@@ -1,0 +1,16 @@
+#include <stdio.h>
+ 
+int main()
+{
+    int num, digit;
+ 
+    printf("Integer: ");
+    scanf("%d", &num);
+	if(num<=99){
+		printf("The number should be greater than %d\n",num);
+	}
+	else{
+    digit = num % 100;
+    printf("Last two digits: %02d\n", digit);}
+    return 0;
+}
