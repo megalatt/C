@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+int a,b,c,d;
+	printf("Enter rectangle four sides of length : ");
+	scanf("%d %d %d %d",&a,&b,&c,&d);
+if (a == b == c == d)
+       printf("Yes\n");
+ 
+    else if (a == b && c == d)
+       printf("Yes\n");
+    else if (a == d && c == b)
+        printf("Yes\n");
+    else if (a == c && d == b)
+        printf("Yes\n");
+    else
+        printf("No\n");
+}
