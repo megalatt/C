@@ -1,0 +1,21 @@
+#include <stdio.h> 
+
+int main()
+{
+   int i, sum=0,m,n,count=0;; 
+scanf("%d %d",&m,&n);
+   for(i=m; i<n; i++) 
+   {
+	   
+     if(i%9==0) 
+     {
+		 count++;
+       printf("%d ", i); 
+       sum += i;
+     }
+   }
+
+   printf("\nNo.of integers: %d\n",count);
+	printf("Sum: %d\n", sum); 
+    return 0;  
+}
