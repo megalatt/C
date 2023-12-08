@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+    int days;
+   // float fine;
+
+    printf("Enter how many days late you are : ");
+    scanf("%d", &days);
+if(days<=0)
+{
+	printf("No Fine\n");
+}
+	else if (days > 0 && days <= 5)
+	{printf("Your fine : Rs.0.50\n");}
+    else if (days >= 6 && days <= 10)
+	{printf("Your fine : Rs.1.00\n");}
+   else if (days > 10 && days<30)
+   {printf("Your fine : Rs.5.00\n");}
+      else
+		  {printf("Your membership has been cancelled\n");
+        }
+	return 0;
+}
