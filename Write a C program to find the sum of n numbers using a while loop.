@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main() {
+int sum = 0,a[5],n;
+int i;
+	printf("Enter how many values do you want to read : ");
+	
+	scanf("%d",&n);
+	
+		printf("Enter %d values : ",n);
+	for(i=1;i<=n;i++)
+		scanf("%d",&a[i]);
+for(i=0;i<=n;i++) {
+sum += a[i];
+}
+printf("Sum of given values : %d\n", sum);
+return 0;
+}
