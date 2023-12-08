@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+	int n,num;
+	printf("Enter a number : ");
+	scanf("%d",&n);
+	if(n==0)
+	{
+		printf("Invalid input\n");
+	}
+	else{
+	num=n*n*n*n*n*n;
+	printf("%d\n",num);
+	}
+}
