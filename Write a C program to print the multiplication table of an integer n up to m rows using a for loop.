@@ -1,0 +1,14 @@
+#include <stdio.h>
+ 
+int main()
+{
+    int n,m,i;
+    printf("Enter an integer value : ");
+    scanf("%d", &n);
+	 printf("Enter how many rows do you want : ");
+    scanf("%d", &m);
+	printf("The multiplication table of %d\n",n);
+    for (i = 1; i <= m; i++)
+        printf("%d * %d = %d\n", n, i, n * i);
+    return 0;
+}
