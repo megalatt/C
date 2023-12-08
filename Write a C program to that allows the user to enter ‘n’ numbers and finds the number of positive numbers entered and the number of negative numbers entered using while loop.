@@ -1,0 +1,30 @@
+#include <stdio.h>
+int main()  
+{  
+    int limit, num, positive = 0, negative = 0, zero = 0; 
+    printf("Enter how many values do you want to read : ");  
+    scanf("%d", &limit);  
+  
+    printf("Enter %d values : ", limit);  
+  
+    while(limit)  
+    {  
+        scanf("%d", &num);  
+        if(num > 0)  
+        {  
+            positive++;  
+        }  
+        else if(num < 0)  
+        {  
+            negative++;  
+        }  
+        else  
+        {  
+            zero++;  
+        }  
+        limit--;  
+    }  
+    printf("The number of positive numbers : %d\n", positive);  
+    printf("The number of negative numbers : %d\n", negative);   
+    return 0;  
+}
