@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main()
+{
+    float var;
+    float* ptr2;
+    float** ptr1;
+    ptr2 = &var;
+ 
+    ptr1 = &ptr2;
+	printf("Enter the number : ");
+	scanf("%f",&var);
+    printf("Value of f using pf1 = %.2f\n", var);
+    printf("Value of f using pf2 = %.2f\n", *ptr2);
+    return 0;
+}
