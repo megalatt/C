@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+void add(int *a, int *b, int *result) {
+    *result = *a + *b;
+}
+
+void subtract(int *a, int *b, int *result) {
+    *result = *a - *b;
+}
+
+int main() {
+    int num1;
+    int num2;
+    int sum, difference;
+printf("Enter a and b values:");
+	scanf("%d %d",&num1,&num2);
+    add(&num1, &num2, &sum);
+    subtract(&num1, &num2, &difference);
+
+    printf("Addition of %d, %d is %d\n",num1,num2, sum);
+    printf("Subtraction of %d, %d is %d\n",num1,num2,difference);
+
+    return 0;
+}
