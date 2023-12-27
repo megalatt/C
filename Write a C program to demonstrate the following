@@ -1,0 +1,55 @@
+Pointers to Pointers
+
+Declare an integer variable x and two pointers ptr1 and ptr2. 
+Use ptr1 and ptr2 to display the value of x with single and double indirection, and allow the user to update the value of x through double indirection.
+ii. Array of Pointers
+
+Declare an integer variable n and create an array of integer pointers named arr. Allow the user to input the size 
+of the array and then input n integers to store in the array using dynamic memory allocation. Finally, print the elements of the array.
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+    int x;
+    int updatedValue;
+// i. Pointers to Pointers    
+       printf("number: ");
+	scanf("%d",&x);
+	int *ptr1=&x;
+	int **ptr2=&ptr1;
+    
+	printf("Value of x: %d\n", x);
+    printf("Value pointed to by ptr1: %d\n",*ptr1);
+    printf("Value pointed to by ptr2 (using double indirection): %d\n",**ptr2);
+
+// Changing the value of x through double indirection
+	printf("Modification value: ");
+    scanf("%d",&x);
+    
+    printf("Updated value of x through double indirection: %d\n", x);
+
+// ii. Array of Pointers
+    int n;
+    printf("size: ");
+    scanf("%d", &n);
+    int *arr[n]; // Array of integer pointers
+ printf("Elements: ");
+	int arr1[n];
+	for(int i=0;i<n;i++){
+		scanf("%d",&arr1[i]);
+	}
+
+	for(int i=0;i<n;i++){
+		arr[i]=&arr1[i];
+	}
+
+    printf("Array: ");
+	for(int i=0;i<n;i++){
+		printf("%d ",*arr[i]);
+	}
+
+    return 0;
+}
+
