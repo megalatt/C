@@ -1,0 +1,25 @@
+Declare an integer variable.[int a]
+	Declare an integer pointer variable [int *b]
+	Assign the address of 'a' to the 'b'
+	b=&a
+	Change the value of *b as double the value of variable a
+	print-> a, *b.
+
+
+
+#include <stdio.h>
+
+int main() {
+    int a;          // Declare an integer variable
+    int *b;         // Declare an integer pointer variable
+    
+    b = &a;         // Assign the address of 'a' to 'b'
+    printf("Enter the value : ");
+	scanf("%d",&a);
+    *b = 2 * a;     // Change the value of *b as double the value of variable a
+    
+    printf("Value of a = %d\n", a);       // Print the value of a
+    printf("Value of *b = %d\n", *b);     // Print the value of *b
+    
+    return 0;
+}
