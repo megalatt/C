@@ -1,0 +1,52 @@
+Declare an integer variable "number" and an integer pointer "pointer". Allow the user to input an integer, store it in "number", 
+and then use the pointer "pointer" to access and modify the value of "number".
+Declare an integer variable "size", and an integer array "numbers" with a size specified by the user. Use a pointer "arrPointer" 
+to input integers into the array. After input, use the same pointer to access and print the elements of the array.
+
+
+
+#include <stdio.h>
+int main() {
+    int number;
+    int *pointer; // Declared an integer pointer
+	int modificationVal;
+    printf("Enter number: ");
+    scanf("%d", &number);
+
+       // Assign the address of 'number' to 'pointer'
+    pointer=&number;
+
+    // Access and print the value using the pointer
+    printf("number: %d\n",*pointer);
+
+    // Take new value to modify the existing number
+    printf("Enter modification value: ");
+	scanf("%d",&number);
+    
+    // Modify the value of 'number' through the pointer and print it
+    printf("number: %d\n",*pointer);
+
+    
+    
+    int size;
+    printf("size: ");
+    scanf("%d", &size);
+    int numbers[size];
+    int *arrPointer = numbers;
+    printf("Elements: ");
+    // Input integers into the numbers array from the user
+        for(int i=0;i<size;i++){
+		scanf("%d",&numbers[i]);
+	}
+
+
+    printf("Array elements accessed using a pointer: ");
+    arrPointer = numbers;
+    // print the elements in the array using pointer variable
+         for(int i=0;i<size;i++){
+		printf("%d ",*(arrPointer+i));
+	}   
+    printf("\n");
+    
+    return 0;
+}
