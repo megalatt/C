@@ -1,0 +1,59 @@
+i. Pointer to Array:
+
+Declare an integer variable n and a pointer ptr3 to an integer array. Allow the user to input the size of the array and then input n integers to store in the array.
+Use the pointer ptr3 to access and print the elements of the array.
+ii. Pointers to Functions:
+
+Declare a pointer to a function named operation that can point to functions taking two integers and returning an integer. Create two functions, add and subtract, 
+that perform addition and subtraction, respectively. 
+Allow the user to input two integers, and then use the operation pointer to call either the add or subtract function based on user choice. Finally, display the result of the operation.
+
+
+#include <stdio.h>
+// Function to add two numbers
+int add(int a,int b){
+	return a+b;
+}
+// Function to subtract two numbers
+int subtract(int a,int b){
+	return a-b;
+}
+
+int main() {
+		// iii. Pointer to Array
+	int n;
+	printf("size: ");
+	scanf("%d",&n);
+   	// Declare an array of the user-defined size
+	int (*ptr3)[n];
+       int arr[n];
+    printf("Elements: ");
+    // Take array inputs
+     for(int i=0;i<n;i++){
+		 scanf("%d",&arr[i]);
+	 }
+	ptr3=&arr;
+
+    printf("Accessing array elements using pointer:");
+    for (int i = 0; i < n; i++) {
+        
+        printf("%d ", (*ptr3)[i] );
+    }
+ printf("\n");
+    // iv. Pointers to Functions
+     int (*operation)(int,int);
+    // Declare a pointer to a function
+    int result;
+    int numA,numB;
+	printf("Enter two integers: ");
+	scanf("%d%d",&numA,&numB);
+    operation = add; // Assign the function 'add' to the pointer
+    result = operation(numA, numB);
+    printf("Using pointer to add: %d\n", result);
+
+    operation = subtract; // Assign the function 'subtract' to the pointer
+    result = operation(numA, numB);
+    printf("Using pointer to subtract: %d\n", result);
+
+    return 0;
+}
